@@ -1,8 +1,8 @@
 library("data.table", lib.loc="~/R/win-library/3.3")
 
-colsNeeded <- c("ST","PUMA","SERIALNO","PINCP","INDP","JWAP","JWMNP","JWTR")
-pop1 <- fread('C:/Users/LIU/Desktop/ADS/P1/ss13pusa.csv', select = colsNeeded)
-pop2 <- fread('C:/Users/LIU/Desktop/ADS/P1/ss13pusb.csv',select = colsNeeded)
+colsNeeded <- c("ST","PUMA","SERIALNO","PINCP","INDP","JWAP","JWMNP","JWTR","WKHP","WKW")
+pop1 <- fread('C:/Users/LIU/Desktop/ADS/P1/ss14pusa.csv', select = colsNeeded)
+pop2 <- fread('C:/Users/LIU/Desktop/ADS/P1/ss14pusb.csv',select = colsNeeded)
 pop3 <- rbind(pop1,pop2)
 pop <- pop3[complete.cases(pop3),]
 rm(pop1,pop2,pop3)
