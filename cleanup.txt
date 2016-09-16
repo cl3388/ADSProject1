@@ -1,4 +1,4 @@
-library("data.table", lib.loc="~/R/win-library/3.3")
+ibrary("data.table", lib.loc="~/R/win-library/3.3")
 
 colsNeeded <- c("ST","PUMA","SERIALNO","PINCP","INDP","JWAP","JWMNP","JWTR","WKHP","WKW")
 pop1 <- fread('C:/Users/LIU/Desktop/ADS/P1/ss14pusa.csv', select = colsNeeded)
